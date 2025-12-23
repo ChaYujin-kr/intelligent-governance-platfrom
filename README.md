@@ -8,8 +8,8 @@
 3. Governance Action: ML 모델이 이상 징후를 발견하면, Python 클라이언트를 통해 Data Catalog API를 호출하여 해당 데이터셋에 'Deprecate(사용중지)' 배지를 단다.
 4. Containerization: 이 모든 과정(Airflow, ML Script, Catalog)을 `docker-compose` 하나로 실행되게 구성한다.
 
->
->intelligent-governance-platform/
+---
+intelligent-governance-platform/
 ├── dags/                          # Airflow DAGs (워크플로우 정의)
 │   └── governance_pipeline.py     # 메인 파이프라인 스크립트
 ├── plugins/                       # Airflow에서 가져다 쓸 커스텀 모듈
